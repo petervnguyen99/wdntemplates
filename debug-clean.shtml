@@ -260,9 +260,14 @@
 <!-- put your custom javascript here -->
 <!-- InstanceEndEditable -->
 <script>
-
-  // https://codepen.io/svinkle/pen/FHGBh
-
+  function uuidv4(){
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (uuid) => {
+      let rand = Math.random() * 16 | 0,
+        uuidv4 = uuid === 'x' ? rand : rand & 0x3 | 0x8;
+      return uuidv4.toString(16);
+    });
+  }
+  // https://codepen.io/svinkle/pen/FHGB
   (function (document, window, undefined) {
     'use strict';
 
@@ -278,7 +283,7 @@
     const slides = document.querySelectorAll('.dcf-carousel li');
     const figures = document.querySelectorAll('.dcf-carousel figure');
     const captions = document.querySelectorAll('.dcf-carousel figcaption');
-
+    const uuid = uuidv4();
 
 
     // Carousel
@@ -326,7 +331,8 @@
       });
 
       // Create unique ID for carousel
-      carousel.setAttribute('id', 'carousel-' + i); // TODO: use same ID creation used for DCF modals
+      carousel.setAttribute('id', uuid.concat('-carousel-', i)); // TODO: use same ID creation used for DCF modals
+      console.log(carousel.getAttribute('id'));
       // Add relative class for absolute positioning of carousel controls
       carousel.classList.add('dcf-relative');
       // Append controls (previous/next slide) to carousel
@@ -340,7 +346,7 @@
       // Define variable for each individual slide
       let slide = slides[i];
       // Create unique ID for each slide
-      slide.setAttribute('id', 'slide-' + i); // TODO: use same ID creation used for DCF modals
+      slide.setAttribute('id', uuid.concat('-slide-', i)); // TODO: use same ID creation used for DCF modals
       // Add classes to each slide
       slide.classList.add('dcf-slide', 'dcf-relative', 'dcf-mb-0');
 
@@ -361,7 +367,7 @@
         // Add classes to each caption toggle button
         captionBtn.classList.add('dcf-btn', 'dcf-btn-slide', 'dcf-btn-slide-caption');
         // Create a unique ID for each caption toggle button
-        captionBtn.setAttribute('id', 'button-' + i); // TODO: use same ID creation used for DCF modals
+        captionBtn.setAttribute('id', uuid.concat('-button-', i)); // TODO: use same ID creation used for DCF modals
         // Add ARIA attributes to each caption toggle button
         captionBtn.setAttribute('aria-controls', 'caption-' + i);
         captionBtn.setAttribute('aria-label', 'Show caption');
@@ -377,9 +383,9 @@
         // Style each caption
         caption.classList.add('dcf-slide-caption', 'dcf-figcaption', 'dcf-invisible');
         // Create a unique ID for each caption
-        caption.setAttribute('id', 'caption-' + i); // TODO: use same ID creation used for DCF modals
+        caption.setAttribute('id', uuid.concat('-caption-', i)); // TODO: use same ID creation used for DCF modals
         // Add ARIA attributes to each caption
-        caption.setAttribute('aria-labelledby', 'button-' + i); // TODO: use same ID creation used for DCF modals
+        caption.setAttribute('aria-labelledby', uuid.concat('-button-', i)); // TODO: use same ID creation used for DCF modals
         caption.setAttribute('aria-hidden', 'true');
       }
     };
