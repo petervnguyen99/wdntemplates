@@ -1,109 +1,479 @@
 <!DOCTYPE html>
-<html class="dcf-no-js" lang="en">
+<html class="no-js" lang="en">
 <head>
-  <!--#include virtual="/wdn/templates_5.1/includes/global/head-1.html" -->
-  <!--
-    Membership and regular participation in the UNL Web Developer Network is required to use the UNLedu Web Framework. Visit the WDN site at http://wdn.unl.edu/. Register for our mailing list and add your site or server to UNLwebaudit.
-    All framework code is the property of the UNL Web Developer Network. The code seen in a source code view is not, and may not be used as, a template. You may not use this code, a reverse-engineered version of this code, or its associated visual presentation in whole or in part to create a derivative work.
-    This message may not be removed from any pages based on the UNLedu Web Framework.
+    <!--#include virtual="/wdn/templates_5.0/includes/global/head-1.html" -->
+    <!--
+      Membership and regular participation in the UNL Web Developer Network is required to use the UNLedu Web Framework. Visit the WDN site at http://wdn.unl.edu/. Register for our mailing list and add your site or server to UNLwebaudit.
+      All framework code is the property of the UNL Web Developer Network. The code seen in a source code view is not, and may not be used as, a template. You may not use this code, a reverse-engineered version of this code, or its associated visual presentation in whole or in part to create a derivative work.
+      This message may not be removed from any pages based on the UNLedu Web Framework.
 
-    $Id$
-  -->
-  <!-- InstanceBeginEditable name="doctitle" -->
-  <title>Use a descriptive page title | Optional Site Title (use for context) | University of Nebraska&ndash;Lincoln</title>
-  <!-- InstanceEndEditable -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/head-2-local.html" -->
-  <!-- InstanceBeginEditable name="head" -->
-  <!-- Place optional header elements here -->
-  <!-- InstanceEndEditable -->
-  <!-- TemplateParam name="class" type="text" value="debug" -->
+      $Id$
+    -->
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Use a descriptive page title | Optional Site Title (use for context) | University of Nebraska&ndash;Lincoln</title>
+    <!-- InstanceEndEditable -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/head-2-local.html" -->
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- Place optional header elements here -->
+    <!-- InstanceEndEditable -->
+    <!-- TemplateParam name="class" type="text" value="debug" -->
 </head>
 <body class="@@(_document['class'])@@ unl" data-version="$HTML_VERSION$">
-<!--#include virtual="/wdn/templates_5.1/includes/global/skip-nav.html" -->
+<!--#include virtual="/wdn/templates_5.0/includes/global/skip-nav.html" -->
 <header class="dcf-header" id="dcf-header" role="banner">
-  <!--#include virtual="/wdn/templates_5.1/includes/global/header-global-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-global-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/visit-global-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/local/visit-local.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/visit-global-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/apply-global-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/local/apply-local.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/apply-global-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/give-global-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/local/give-local.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/give-global-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-global-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/idm.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/search.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/header-global-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/logo-lockup-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/site-affiliation-1.html" -->
-  <!-- InstanceBeginEditable name="affiliation" -->
-  <a href="#">My site affiliation</a>
-  <!-- InstanceEndEditable -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/site-affiliation-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/site-title-1.html" -->
-  <!-- InstanceBeginEditable name="titlegraphic" -->
-  <a class="dcf-txt-h6" href="#">Title of my site</a>
-  <!-- InstanceEndEditable -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/site-title-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/logo-lockup-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-toggle-group.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-menu-1.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-toggle-btn.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-menu-child-1.html" -->
-  <!-- InstanceBeginEditable name="navlinks" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/local/nav-local.html" -->
-  <!-- InstanceEndEditable -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-menu-child-2.html" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/nav-menu-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/header-global-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-global-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/visit-global-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/local/visit-local.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/visit-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/apply-global-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/local/apply-local.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/apply-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/give-global-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/local/give-local.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/give-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/idm.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/search.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/header-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/logo-lockup-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/site-affiliation-1.html" -->
+    <!-- InstanceBeginEditable name="affiliation" -->
+    <a href="#">My site affiliation</a>
+    <!-- InstanceEndEditable -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/site-affiliation-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/site-title-1.html" -->
+    <!-- InstanceBeginEditable name="titlegraphic" -->
+    <a class="dcf-txt-h6" href="#">Title of my site</a>
+    <!-- InstanceEndEditable -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/site-title-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/logo-lockup-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-toggle-group.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-menu-1.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-toggle-btn.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-menu-child-1.html" -->
+    <!-- InstanceBeginEditable name="navlinks" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/local/nav-local.html" -->
+    <!-- InstanceEndEditable -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-menu-child-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/nav-menu-2.html" -->
 </header>
 
 <main class="dcf-main" id="dcf-main" role="main" tabindex="-1">
 
-  <!-- InstanceBeginEditable name="hero" -->
-  <div class="dcf-hero dcf-hero-default">
-    <!-- InstanceEndEditable -->
-    <div class="dcf-hero-group-1">
-      <nav class="dcf-breadcrumbs" id="dcf-breadcrumbs" role="navigation" aria-label="breadcrumbs">
-        <!-- InstanceBeginEditable name="breadcrumbs" -->
-        <ol>
-          <li><a href="http://www.unl.edu/" title="University of Nebraska&ndash;Lincoln" class="wdn-icon-home">UNL</a></li>
-          <li><a href="#" title="Site Title">Site Title</a></li>
-          <li>Home</li>
-        </ol>
+    <!-- InstanceBeginEditable name="hero" -->
+    <div class="dcf-hero dcf-hero-default">
         <!-- InstanceEndEditable -->
-      </nav>
-      <header class="dcf-page-title" id="dcf-page-title">
-        <!-- InstanceBeginEditable name="pagetitle" -->
-        <h1>Please Title Your Page Here</h1>
+        <div class="dcf-hero-group-1">
+            <nav class="dcf-breadcrumbs" id="dcf-breadcrumbs" role="navigation" aria-label="breadcrumbs">
+                <!-- InstanceBeginEditable name="breadcrumbs" -->
+                <ol>
+                    <li><a href="http://www.unl.edu/" title="University of Nebraska&ndash;Lincoln" class="wdn-icon-home">UNL</a></li>
+                    <li><a href="#" title="Site Title">Site Title</a></li>
+                    <li>Home</li>
+                </ol>
+                <!-- InstanceEndEditable -->
+            </nav>
+            <header class="dcf-page-title" id="dcf-page-title">
+                <!-- InstanceBeginEditable name="pagetitle" -->
+                <h1>Please Title Your Page Here</h1>
+                <!-- InstanceEndEditable -->
+            </header>
+            <!-- InstanceBeginEditable name="herogroup1" -->
+            <!-- InstanceEndEditable -->
+        </div>
+        <!-- InstanceBeginEditable name="herogroup2" -->
+        <div class="dcf-hero-group-2">
+        </div>
         <!-- InstanceEndEditable -->
-      </header>
-      <!-- InstanceBeginEditable name="herogroup1" -->
-      <!-- InstanceEndEditable -->
     </div>
-    <!-- InstanceBeginEditable name="herogroup2" -->
-    <div class="dcf-hero-group-2">
+    <div class="dcf-main-content dcf-wrapper">
+        <!-- InstanceBeginEditable name="maincontentarea" -->
+        <p>Impress your audience with awesome content!</p>
+        <!-- InstanceEndEditable -->
     </div>
-    <!-- InstanceEndEditable -->
-  </div>
-  <div class="dcf-main-content dcf-wrapper">
-    <!-- InstanceBeginEditable name="maincontentarea" -->
-    <p>Impress your audience with awesome content!</p>
-    <!-- InstanceEndEditable -->
-  </div>
+    <!-- Carousel WIP -->
+    <style>
+
+        .unl .dcf-btn-slide-caption[aria-expanded="false"] svg {
+            transform: rotate(0);
+            transition: transform .2s cubic-bezier(.17,.89,.32,1.27);
+        }
+
+        .unl .dcf-btn-slide-caption[aria-expanded="true"] svg {
+            transform: rotate(45deg);
+            transition: transform .2s cubic-bezier(.17,.89,.32,1.27);
+        }
+
+        .unl .dcf-slide-caption[aria-hidden="true"] {
+            opacity: 0;
+            pointer-events: none;
+            /*   transition: opacity $timing-fade-out $easing-fade-out; */
+            transition: opacity 500ms ease-out;
+        }
+
+        .unl .dcf-slide-caption[aria-hidden="false"] {
+            opacity: 1;
+            pointer-events: auto;
+            /*   transition: opacity $timing-fade-in $easing-fade-in; */
+            transition: opacity 250ms ease-out;
+        }
+
+
+        .unl .dcf-slide-deck {
+            --btn-b-width: 2px;
+            --btn-size-x: 2.75rem;
+            --btn-size-y: 2.25rem;
+            --clip: 3px;
+            /*   clip-path: polygon(100% 0px, 100% calc(100% - 2.25em - 7px), calc(100% - 5.125em - 13px) calc(100% - 2.25em - 7px), calc(100% - 5.125em - 13px) 100%, 0px 100%, 0px 0px); */
+            /*
+              clip-path: polygon(
+                100% 0px,
+                100% calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                calc(100% - (var(--btn-size-x) * 2) - (var(--btn-b-width) * 5) - var(--clip)) calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                calc(100% - (var(--btn-size-x) * 2) - (var(--btn-b-width) * 5) - var(--clip)) 100%,
+                -(var(--clip)) 100%,
+                0px 0px
+              );
+            */
+            clip-path: polygon(
+                    100% 0px,
+                    100% calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                    calc(100% - (var(--btn-size-x) * 2) - (var(--btn-b-width) * 5) - var(--clip)) calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                    calc(100% - (var(--btn-size-x) * 2) - (var(--btn-b-width) * 5) - var(--clip)) 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) calc(100% + var(--clip)),
+                    -3px calc(100% + var(--clip)),
+                    -3px calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                    0px calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                    0px 0px
+            );
+        }
+
+        .unl .dcf-slide-figure > div,
+        .unl .dcf-slide-figure figcaption {
+            /*   clip-path: polygon(100% 0px, 100% 100%, calc(2.56em + 7px) 100%, calc(2.56em + 7px) calc(100% - 2.25em - 7px), 0px calc(100% - 2.25em - 7px), 0px calc(100% - 2.25em - 4px), calc(2.56em + 4px) calc(100% - 2.25em - 4px), calc(2.56em + 4px) 100%, 0 100%, 0px 0px); */
+            clip-path: polygon(
+                    100% 0px,
+                    100% 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)),
+                    0px calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2) - var(--clip)), 0px calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2)),
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2)) calc(100% - var(--btn-size-y) - (var(--btn-b-width) * 2)),
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2)) 100%,
+                    0 100%,
+                    0px 0px
+            );
+        }
+
+        .unl .dcf-btn-slide-caption {
+            background-color:rgba(36,36,35,.75);
+            border-color: transparent;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .unl .dcf-slide-caption {
+            background-color: rgba(36,36,35,.75);
+            /*   clip-path: polygon(100% 0px, 100% 100%, calc(2.56rem + 7px) 100%, calc(2.56rem + 7px) calc(100% - 2.25rem - 7px), 0px calc(100% - 2.25rem - 7px), 0px 0px); */
+            clip-path: polygon(
+                    100% 0px,
+                    100% 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) 100%,
+                    calc(var(--btn-size-x) + (var(--btn-b-width) * 2) + var(--clip)) calc(100% - var(--btn-size) - (var(--btn-p-y) * 2) - (var(--btn-b-width) * 2) - var(--clip)),
+                    0px calc(100% - var(--btn-size) - (var(--btn-p-y) * 2) - (var(--btn-b-width) * 2) - var(--clip)),
+                    0px 0px
+            );
+            color: #fefdfa;
+            height: 100%;
+            left: 0;
+            padding: 1em 1.13em;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+    </style>
+
+
+    <div class="dcf-bleed dcf-wrapper dcf-pt-9 dcf-pb-9 unl-bg-lightest-gray">
+        <div class="dcf-grid">
+            <div class="dcf-col-100% dcf-col-33%-start@sm dcf-col-50%-start@lg">
+                <div class="dcf-carousel dcf-mb-6" aria-labelledby="carouselheading">
+                    <h2 class="dcf-sr-only" id="carouselheading">Carousel</h2>
+                    <ul>
+                        <!-- Slide 1 -->
+                        <li>
+                            <figure>
+                                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
+                                    <img
+                                            class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%"
+                                            src="wdn/templates_5.0/images/dev/111024-autumn-018-xl-min.jpg"
+                                            alt="Placeholder photo">
+                                </div>
+                                <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
+                            </figure>
+                        </li>
+                        <!-- Slide 2 -->
+                        <li>
+                            <figure>
+                                <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
+                                    <img
+                                            class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%"
+                                            src="wdn/templates_5.0/images/dev/120424-campus-097-xl-min.jpg"
+                                            alt="Placeholder photo">
+                                </div>
+                                <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>
+                            </figure>
+                        </li>
+                        <!--Slide 3 with no figcaption-->
+                        <li>
+                            <!--              <figure>-->
+                            <div class="dcf-ratio dcf-ratio-16x9 dcf-ratio-1x1@sm dcf-ratio-16x9@lg">
+                                <img
+                                        class="dcf-d-block dcf-ratio-child dcf-obj-fit-cover dcf-h-100% dcf-w-100%"
+                                        src="wdn/templates_5.0/images/dev/170902-ne-asu-0878-xl-min.jpg"
+                                        alt="Placeholder photo">
+                            </div>
+                            <!--                <figcaption>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <small class="dcf-txt-xs dcf-txt-nowrap">Illustration by Jane Doe</small></figcaption>-->
+                            <!--              </figure>-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="dcf-footer" id="dcf-footer" role="contentinfo">
-  <!--#include virtual="/wdn/templates_5.1/includes/global/footer-global-1.html" -->
-  <!-- InstanceBeginEditable name="contactinfo" -->
-  <!--#include virtual="/wdn/templates_5.1/includes/local/footer-local.html" -->
-  <!-- InstanceEndEditable -->
-  <!--#include virtual="/wdn/templates_5.1/includes/global/footer-global-2.html" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/footer-global-1.html" -->
+    <!-- InstanceBeginEditable name="contactinfo" -->
+    <!--#include virtual="/wdn/templates_5.0/includes/local/footer-local.html" -->
+    <!-- InstanceEndEditable -->
+    <!--#include virtual="/wdn/templates_5.0/includes/global/footer-global-2.html" -->
 </footer>
-<!--#include virtual="/wdn/templates_5.1/includes/global/noscript.html" -->
-<!--#include virtual="/wdn/templates_5.1/includes/global/js-body.html" -->
+<!--#include virtual="/wdn/templates_5.0/includes/global/noscript.html" -->
+<!--#include virtual="/wdn/templates_5.0/includes/global/js-body.html" -->
 <!-- InstanceBeginEditable name="jsbody" -->
 <!-- put your custom javascript here -->
 <!-- InstanceEndEditable -->
+<script>
+
+  // https://codepen.io/svinkle/pen/FHGBh
+
+  (function (document, window, undefined) {
+    'use strict';
+
+    // TODO:
+    // Add functionality for previous and next slides
+    // Allow user to swipe on touchscreens to progress slide
+    // Add option to each carousel to let developer choose type of slide transition – move or fade
+
+
+    // Define variables for carousel, unordered list, slides, figures and captions
+    const carousels = document.querySelectorAll('.dcf-carousel');
+    const uls = document.querySelectorAll('.dcf-carousel ul');
+    const slides = document.querySelectorAll('.dcf-carousel li');
+    const figures = document.querySelectorAll('.dcf-carousel figure');
+    const captions = document.querySelectorAll('.dcf-carousel figcaption');
+
+
+
+    // Carousel
+    for (let i = 0; i < carousels.length; i++) {
+
+      // Define variable for each individual carousel and unordered list of slides
+      let carousel = carousels[i];
+      let ul = uls[i];
+
+      // Add classes to carousel unordered lists
+      ul.classList.add('dcf-slide-deck', 'dcf-list-bare', 'dcf-mb-0');
+
+      // Create carousel controls (previous/next slide buttons)
+      let ctrls = document.createElement('div');
+      let previousCtrl = document.createElement('button');
+      let nextCtrl = document.createElement('button');
+
+      // Add classes to carousel controls (previous/next slide buttons)
+      ctrls.classList.add('dcf-btn-group', 'dcf-absolute', 'dcf-pin-right', 'dcf-pin-bottom', 'dcf-z-1');
+
+      // Add role to controls controls
+      ctrls.setAttribute('role', 'group');
+
+      previousCtrl.classList.add('dcf-btn', 'dcf-btn-primary', 'dcf-btn-slide', 'dcf-btn-slide-prev');
+      previousCtrl.setAttribute('type','button');
+      previousCtrl.setAttribute('aria-label','Previous');
+      previousCtrl.innerHTML = '<svg class="dcf-h-4 dcf-w-4 dcf-fill-current" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">' +
+        '<path d="M21.746.064a.504.504 0 0 0-.504.008l-19 11.5a.499.499 0 0 0-.001.856l19 11.5A.501.501 0 0 0 22 23.5V.5a.5.5 0 0 0-.254-.436z"></path>' +
+        '</svg>';
+
+      nextCtrl.classList.add('dcf-btn', 'dcf-btn-primary', 'dcf-btn-slide', 'dcf-btn-slide-next');
+      nextCtrl.setAttribute('type','button');
+      nextCtrl.setAttribute('aria-label','Next');
+      nextCtrl.innerHTML = '<svg class="dcf-h-4 dcf-w-4 dcf-fill-current" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">' +
+        '<path d="M21.759 11.577L2.786.077a.499.499 0 0 0-.759.428v23a.498.498 0 0 0 .5.5c.09 0 .18-.024.259-.072l18.973-11.5a.5.5 0 0 0 0-.856z"></path>' +
+        '</svg>';
+
+
+      //Add event for previous and next controls
+      previousCtrl.addEventListener('click', function(){
+        incrementSlides(-1);
+      });
+      nextCtrl.addEventListener('click', function(){
+        incrementSlides(1);
+      });
+
+      // Create unique ID for carousel
+      carousel.setAttribute('id', 'carousel-' + i); // TODO: use same ID creation used for DCF modals
+      // Add relative class for absolute positioning of carousel controls
+      carousel.classList.add('dcf-relative');
+      // Append controls (previous/next slide) to carousel
+      ctrls.appendChild(previousCtrl);
+      ctrls.appendChild(nextCtrl);
+      carousel.appendChild(ctrls);
+    };
+
+    // Slide
+    for (let i = 0; i < slides.length; i++) {
+      // Define variable for each individual slide
+      let slide = slides[i];
+      // Create unique ID for each slide
+      slide.setAttribute('id', 'slide-' + i); // TODO: use same ID creation used for DCF modals
+      // Add classes to each slide
+      slide.classList.add('dcf-slide', 'dcf-relative', 'dcf-mb-0');
+
+    };
+
+
+    // TODO: Check if figure and figcaption exist in each slide. If they exist, create button to toggle caption visibility.
+    // Figure and caption
+    for (let i = 0; i < figures.length; i++) {
+      // Define variable for each individual figure and caption
+      let figure = figures[i];
+      let caption = captions[i];
+      if (typeof caption == 'undefined') {  // If no figcaption, the figure tag has to be removed as well.
+        console.log('No caption');
+      } else if (caption.parentNode == figure) {
+        // Create button to show/hide caption
+        let captionBtn = document.createElement('button');
+        // Add classes to each caption toggle button
+        captionBtn.classList.add('dcf-btn', 'dcf-btn-slide', 'dcf-btn-slide-caption');
+        // Create a unique ID for each caption toggle button
+        captionBtn.setAttribute('id', 'button-' + i); // TODO: use same ID creation used for DCF modals
+        // Add ARIA attributes to each caption toggle button
+        captionBtn.setAttribute('aria-controls', 'caption-' + i);
+        captionBtn.setAttribute('aria-label', 'Show caption');
+        captionBtn.setAttribute('aria-expanded', 'false');
+        // Add SVG icon to each caption toggle button
+        captionBtn.innerHTML = '<svg class="dcf-h-4 dcf-w-4 dcf-fill-current" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">' +
+          '<path d="M22 10h-8V2c0-1.1-.9-2-2-2s-2 .9-2 2v8H2c-1.1 0-2 .9-2 2s.9 2 2 2h8v8c0 1.1.9 2 2 2s2-.9 2-2v-8h8c1.1 0 2-.9 2-2s-.9-2-2-2z"></path>' +
+          '</svg>';
+        // Add class to each figure
+        figure.classList.add('dcf-slide-figure');
+        // Append caption toggle button to each figure
+        figure.appendChild(captionBtn);
+        // Style each caption
+        caption.classList.add('dcf-slide-caption', 'dcf-figcaption', 'dcf-invisible');
+        // Create a unique ID for each caption
+        caption.setAttribute('id', 'caption-' + i); // TODO: use same ID creation used for DCF modals
+        // Add ARIA attributes to each caption
+        caption.setAttribute('aria-labelledby', 'button-' + i); // TODO: use same ID creation used for DCF modals
+        caption.setAttribute('aria-hidden', 'true');
+      }
+    };
+
+    // Caption visibility transition
+    function captionTransition(event) {
+      // Remove event listener and toggle visibility after caption has closed
+      event.removeEventListener('transitionend', captionTransition, true);
+      // Check if caption is already visible
+      if (!event.classList.contains('dcf-invisible')) {
+        // Add class to hide caption
+        event.classList.add('dcf-invisible');
+      }
+    }
+
+    // Show caption
+    let showCaption = function (button, caption) {
+      // Check if caption is already visible
+      if (!caption.classList.contains('dcf-invisible')) {
+        // Hide content
+        caption.addEventListener('transitionend', captionTransition(caption), true);
+        // Update ARIA attributes
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-label', 'Show caption');
+        caption.setAttribute('aria-hidden', 'true');
+      } else {
+        // Remove class to show content
+        caption.classList.remove('dcf-invisible');
+        // Update ARIA attributes
+        button.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-label', 'Hide caption');
+        caption.setAttribute('aria-hidden', 'false');
+      }
+    };
+
+    // Caption toggle buttons
+    let buttons = document.querySelectorAll('.dcf-btn-slide-caption');
+    [].forEach.call(buttons, function(button, index) {
+      // Content var
+      let caption = button.previousElementSibling;
+      // Show caption when button is pressed
+      button.addEventListener('click', function () {
+        showCaption(this, caption);
+        return false;
+      }, false);
+
+      // Show caption when the 'space' key is pressed
+      button.addEventListener('keydown', function (event) {
+        // Handle 'space' key
+        if (event.which === 32) {
+          event.preventDefault();
+          showCaption(this, caption);
+        }
+      }, false);
+    });
+
+
+
+    // UNL THEME
+
+    // Define variable for slide buttons
+    let slideBtns = document.querySelectorAll('.dcf-btn-slide');
+
+    // Find all slide buttons
+    for (let i = 0; i < slideBtns.length; i++) {
+      // Define variable for each slide button
+      let slideBtn = slideBtns[i];
+      // Add classes specific to UNL theme to each caption toggle button
+      slideBtn.classList.add('dcf-d-flex', 'dcf-ai-center', 'dcf-pt-4', 'dcf-pb-4', 'unl-cream');
+    };
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function incrementSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      if (n > slides.length) {
+        slideIndex = 1;
+      } else if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      slides[slideIndex - 1].style.display = 'block';
+    }
+
+  })(document, window);
+
+</script>
 </body>
 </html>
